@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    color: rgb(255, 255, 255);
+}
+/*CONFIGURACION PARA QUE LAS IMAGENES SE AJUSTEN AL VIEWPORT*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+p{
+    color: #C1C1C1;
+}
+
+h2{
+    color: black;
+}
+
+.header-content{
+    display: grid;
+    grid-template-columns: .2fr auto .5fr;
+    align-items: center;
+    justify-items: center;
+    height: 10rem;
+    font-size: 1.6rem;
+    background-color: #202020;
+}
+
+.header-content h1{
+    font-size: 3rem;
+    justify-self: start;
+    cursor: pointer;
+}
+
+.icon-menu svg{
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+}
+
+.icon-car{
+    justify-self: end;
+    padding-right: 70px;
+}
+
+.icon-car svg{
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+}
+
+.header-options{
+    display: none;
+    list-style: none;
+}
+
+.header-options--active{
+    display: flex;
+    flex-flow: column;
+    flex-direction: column-reverse;
+    position: absolute;
+    align-self: flex-start;
+    justify-self: start;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    z-index: 1;
+    height: 100vh;
+    list-style: none;
+    background-color: #292929;
+    animation: mov;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes mov {
+    from {
+        left: -40rem;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.header-options--active li{
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.header-options--active li:hover{
+    background-color: #696767;
+}
+
+
+/* SECTION ONE */
+
+.section-first{
+    background-color: #202020;
+}
+
+.section-first--text{
+    position: absolute;
+    display: grid;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+    top: 30%;
+    padding: 0 100px;
+}
+
+.section-first--text h3{
+    font-size: 2rem;
+    color: #C1C1C1;
+}
+
+.section-first--text h1{
+    font-size: 3rem;
+    
+}
+
+.section-first--text p{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.section-first--text button{
+    background-color: #D87C49;
+    padding: 20px;
+    width: 150px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* two section*/
+
+.content-products{
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+/* PRODUCTO HEADPHONES LINK*/
+.content-products--headphones{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.content-products--headphones div{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F1F1F1;
+    width: 200px;
+    height: 130px;
+    border-radius: 20px;
+    
+}
+
+.content-products--headphones div a{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    text-decoration: none;
+}
+
+.content-products--headphones img{
+    width: 30%;
+    position: relative;
+    top: 30%;
+}
+
+/* PRODUCTO SPEAKER LINK*/
+.content-products--speakers{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.content-products--speakers div{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F1F1F1;
+    width: 200px;
+    height: 130px;
+    border-radius: 20px;
+    
+}
+
+.content-products--speakers div a{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    text-decoration: none;
+}
+
+.content-products--speakers img{
+    width: 40%;
+    position: relative;
+    top: 35%;
+}
+
+/* PRODUCTO EARPHONE LINK*/
+.content-products--earphones{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.content-products--earphones div{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F1F1F1;
+    width: 200px;
+    height: 130px;
+    border-radius: 20px;
+    
+}
+
+.content-products--earphones div a{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    text-decoration: none;
+}
+
+.content-products--earphones img{
+    width: 50%;
+    position: relative;
+    top: 40%;
+}
+
+/* SECTION OF NEW PRODUCTS */
+
+.content-newproducts{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.content-zx9{
+    display: grid;
+    grid-template-rows: auto .1fr .1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #D87C49;
+    border-radius: 20px;
+    width: 700px;
+    height: 80rem;
+    gap: 20px;
+}
+
+.content-zx9 h1{
+    font-size: 5rem;
+    text-align: center;
+    
+}
+
+.content-zx9 p{
+    margin: 0 100px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content-zx9 button{
+    padding: 15px;
+    border: none;
+    color: white;
+    background-color: #000000;
+    cursor: pointer;
+
+}
+
+.content-zx9 img{
+    width: 30rem;
+    height: 30rem;
+}
+
+.content-zx7{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #DFDFDF;
+    border-radius: 20px;
+    width: 700px;
+    height: 40rem;
+    overflow-x: hidden;
+}
+
+.content-zx7 div{
+    justify-self: start;
+    padding-left: 20px;
+}
+
+.content-zx7 h1{
+    color: #000000;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.content-zx7 button{
+    background: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.content-zx7 img{
+    position: relative; 
+    left: 30%;
+    width: 300px;
+    height: 380px;
+}
+
+
+.content-twoproducts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+}
+
+.content-earphonesnew{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #292929;
+    border-radius: 20px;
+    width: 330px;
+    height: 30rem;
+}
+
+.content-yx1{
+    display: grid;
+    justify-content: flex-start;
+    padding-left: 50px;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    width: 330px;
+    height: 30rem;
+    gap: 20px;
+    color: #000000;
+}
+
+.content-yx1 h1{
+    align-self: flex-end;
+    font-size: 2.5rem;
+}
+
+.content-yx1 button{
+    align-self: flex-start;
+    padding: 15px;
+    width: 150px;
+    background: none;
+    cursor: pointer;
+}
+
+/* CONTENT INFO LAST*/
+
+.content-info{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+    width: 100vw;
+}
+
+.content-info figure{
+    border-radius: 20px;
+    width: 90vw;
+    height: 500px;
+    overflow-y: hidden;
+}
+
+.content-info figure img{
+    width: 100%;
+}
+
+.content-info h1{
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+    padding: 50px;
+}
+
+.content-info p{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0px 30px;
+}
+
+.content-footer{
+    background-color: #202020;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.group-options h3{
+    font-size: 2.5rem;
+    padding: 30px;
+}
+
+.group-options ul{
+    display: grid;
+    list-style: none;
+    text-align: center;
+    gap: 30px;
+}
+
+.group-redes{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.group-redes p{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0px 30px;
+}
+
+.group-redes ul{
+    display: flex;
+    height: 100px;
+    gap: 30px;
+    list-style: none;
+    justify-self: center;
+}
+
+.group-redes ul li{
+    align-self: center;
+    justify-self: center;
+}
+

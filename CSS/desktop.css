@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    color: rgb(255, 255, 255);
+}
+/*CONFIGURACION PARA QUE LAS IMAGENES SE AJUSTEN AL VIEWPORT*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+p{
+    color: #C1C1C1;
+}
+
+h2{
+    color: black;
+}
+
+.header-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 10rem;
+    font-size: 1.6rem;
+    background-color: #202020;
+}
+
+.header-content h1{
+    font-size: 3rem;
+    justify-self: center;
+    grid-column-start: 1;
+    cursor: pointer;
+}
+
+.header-options{
+    display: flex;
+    gap: 20px;
+    align-self: center;
+    justify-self: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 1.5rem;
+}
+
+.header-options li{
+    cursor: pointer;
+}
+
+.icon-menu svg{
+    display: none;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+}
+
+.icon-car{
+    justify-self: end;
+    padding-right: 70px;
+    grid-column-start: 4;
+    
+}
+
+.icon-car svg{
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+}
+
+/* SECTION ONE */
+
+.section-first{
+    display: grid;
+    background-color: #202020;
+}
+
+.section-first--text{
+    justify-self: center;
+    position: absolute;
+    display: grid;
+    gap: 150px;
+    align-items: center;
+    justify-items: center;
+    top: 30%;
+    padding: 0 100px;
+}
+
+.section-first--img{
+    justify-self: center;
+}
+
+.section-first--text h3{
+    font-size: 3rem;
+    color: #C1C1C1;
+}
+
+.section-first--text h1{
+    font-size: 4rem;
+    
+}
+
+.section-first--text p{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.section-first--text button{
+    background-color: #D87C49;
+    padding: 20px;
+    width: 20.5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* two section*/
+
+.content-products{
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+/* PRODUCTO HEADPHONES LINK*/
+.content-products--headphones{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.content-products--headphones div{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F1F1F1;
+    width: 30rem;
+    min-height: 150px;
+    border-radius: 20px;
+    
+}
+
+.content-products--headphones div a{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    text-decoration: none;
+}
+
+.content-products--headphones img{
+    width: 10rem;
+    position: relative;
+    top: 30%;
+}
+
+/* PRODUCTO SPEAKER LINK*/
+.content-products--speakers{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.content-products--speakers div{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F1F1F1;
+    width: 30rem;
+    min-height: 150px;
+    border-radius: 20px;
+    
+}
+
+.content-products--speakers div a{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    text-decoration: none;
+}
+
+.content-products--speakers img{
+    width: 10rem;
+    position: relative;
+    top: 35%;
+}
+
+/* PRODUCTO EARPHONE LINK*/
+.content-products--earphones{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.content-products--earphones div{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F1F1F1;
+    width: 30rem;
+    min-height: 150px;
+    border-radius: 20px;
+    
+}
+
+.content-products--earphones div a{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    text-decoration: none;
+}
+
+.content-products--earphones img{
+    width: 20rem;
+    position: relative;
+    top: 40%;
+}
+
+/* SECTION OF NEW PRODUCTS */
+
+.content-newproducts{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.content-zx9{
+    display: grid;
+    grid-template-rows: auto .1fr .1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #D87C49;
+    border-radius: 20px;
+    width: 90vw;
+    gap: 20px;
+}
+
+.content-zx9 h1{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.content-zx9 p{
+    margin: 0 100px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content-zx9 button{
+    padding: 30px;
+    border: none;
+    color: white;
+    background-color: #000000;
+    cursor: pointer;
+
+}
+
+.content-zx9 img{
+    max-width: 40vw;
+    
+}
+
+.content-zx7{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #DFDFDF;
+    border-radius: 20px;
+    width: 90vw;
+    height: 40rem;
+    overflow-x: hidden;
+}
+
+.content-zx7 div{
+    justify-self: center;
+    
+}
+
+.content-zx7 h1{
+    color: #000000;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.content-zx7 button{
+    background: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.content-zx7 img{
+    position: relative; 
+    left: 10%;
+    width: 30rem;
+}
+
+
+.content-twoproducts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+}
+
+.content-earphonesnew{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #292929;
+    border-radius: 20px;
+    width: 45vw;
+    height: 30rem;
+    overflow-y: hidden;
+}
+
+.content-earphonesnew img {
+    width: fit-content;
+}
+
+.content-yx1{
+    display: grid;
+    justify-content: flex-start;
+    padding-left: 50px;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    width: 45vw;
+    height: 30rem;
+    gap: 20px;
+    color: #000000;
+}
+
+.content-yx1 h1{
+    align-self: flex-end;
+    font-size: 2.5rem;
+}
+
+.content-yx1 button{
+    align-self: flex-start;
+    padding: 15px;
+    width: 150px;
+    background: none;
+    cursor: pointer;
+}
+
+/* CONTENT INFO LAST*/
+
+.content-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 90vw;
+}
+
+.content-info div{
+    width: 45vw;
+    height: 400px;
+}
+
+.content-info figure{
+    border-radius: 20px;
+    width: 35vw;
+    min-height: 80vh;
+    overflow-y: hidden;
+}
+
+.content-info figure img{
+    width: 100%;
+}
+
+.content-info h1{
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+    padding: 50px;
+}
+
+.content-info p{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0px 30px;
+}
+
+.content-footer{
+    background-color: #202020;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.group-options h3{
+    font-size: 2.5rem;
+    padding: 30px;
+}
+
+.group-options ul{
+    display: grid;
+    list-style: none;
+    text-align: center;
+    font-size: 1.5rem;
+    gap: 30px;
+}
+
+.group-redes{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.group-redes p{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0px 100px;
+}
+
+.group-redes ul{
+    display: flex;
+    height: 100px;
+    gap: 30px;
+    list-style: none;
+    justify-self: center;
+}
+
+.group-redes ul li{
+    align-self: center;
+    justify-self: center;
+}
+
+.group-redes ul li svg{
+    width: 3rem;
+    min-height: 3.5rem;
+}
+
